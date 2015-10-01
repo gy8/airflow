@@ -60,6 +60,11 @@ _operators = {
     'mssql_to_hive': ['MsSqlToHiveTransfer'],
     'slack_operator': ['SlackAPIOperator', 'SlackAPIPostOperator'],
     'generic_transfer': ['GenericTransfer'],
+    'postgres_check_operator': [
+        'PostgresCheckOperator',
+        'PostgresValueCheckOperator',
+        'PostgresIntervalCheckOperator',
+    ],
 }
 
 _import_module_attrs(globals(), _operators)
